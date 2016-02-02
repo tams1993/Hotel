@@ -18,6 +18,8 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -33,7 +35,7 @@
 <div class="navbar-wrapper">
     <div class="container">
 
-        <nav class="navbar navbar-default navbar-static-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -47,11 +49,11 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Language</a></li>
+                        <li class=""><a href="#">LANGUAGE</a></li>
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                               aria-haspopup="true" aria-expanded="false">Currency <span class="caret"></span></a>
+                               aria-haspopup="true" aria-expanded="false">CURRENCY <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">LAK</a></li>
                                 <li><a href="#">USD</a></li>
@@ -61,9 +63,11 @@
                         </li>
                     </ul>
 
+
+
                     <ul class="nav navbar-nav pull-right">
-                        <li><a href="#create">Create Account</a></li>
-                        <li><a href="#login">Login</a></li>
+                        <li class="border-left"><a href="#create">CREATE ACCOUNT</a></li>
+                        <li class="border-left"><a href="#login">LOGIN</a></li>
 
                     </ul>
 
@@ -74,7 +78,21 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container text-center navbar-fixed-top " style="margin-top: 100px; background-color:#c2c8ff; padding-bottom: auto;box-shadow: 0px 5px 10px #494a69;
+">
+
+
+        <h3 style="display: inline-block">Check In:</h3> <input class="datepicker"type="text" style="margin-top: auto">
+        <h3 style="display: inline-block;margin-left: 10px">Check Out:</h3> <input class="datepicker"type="text">
+        <a class="btn btn-lg btn-warning " href="#" role="button" style="color: #000000;margin: 10px">Show Prices</a>
+
+
+</div>
+
+<div class="container" style="margin-top: 125px">
+
+
+
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -147,8 +165,8 @@
         <h1>GET AWAY AT THE BEST PRICE
         </h1>
 
-        <h2>Where, when and with anyone you want
-        </h2>
+        <h3>Where, when and with anyone you want
+        </h3>
 
         <section class="content">
 
@@ -161,28 +179,28 @@
 
                         <div style="background-image: url('')"></div>
 
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                        <img src="http://s8.favim.com/orig/72/girl-hipster-photography-quality-Favim.com-715633.jpg"
                              alt="Generic placeholder image" width="100%" height="100%">
                         <div class="img-circle circle" style="text-align: center; position: relative"><h2>UP TO 50% OFF</h2></div>
 
-                        <h3>Up to 50% off including breakfast</h3>
+                        <h4>Up to 50% off including breakfast</h4>
                     </div>
 
 
 
 
 
-                    <p><a class="btn btn-warning" href="#" role="button">Learn more &raquo;</a></p>
+                    <p><a class="btn btn-warning" href="#" role="button">View details &raquo;</a></p>
 
                 </div>
                 <div class="col-lg-4 middle-content" >
 
                     <div class="">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                        <img src="http://s1.favim.com/orig/9/coffee-photo-photography-yummy-Favim.com-172566.jpg"
                              alt="Generic placeholder image" width="100%" height="100%">
                         <div class="img-circle circle" style="text-align: center; position: relative ;background-color: #1b6d85"><h2>BEST HOLIDAY</h2></div>
 
-                        <h3>The offer includes stay, buffet breakfast</h3>
+                        <h4>The offer includes stay, buffet breakfast</h4>
 
 
                     </div>
@@ -198,11 +216,11 @@
 
                     <div class="">
 
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                        <img src="http://www.seattleivf.com/images/inside/157669973.jpg"
                              alt="Generic placeholder image" width="100%" height="100%">
                         <div class="img-circle circle" style="text-align: center; position: relative; background-color: #2e6da4"><h2>BEST FOR FAMILY</h2></div>
 
-                        <h3>Special offer for family</h3>
+                        <h4>Special offer for family</h4>
 
                     </div>
 
@@ -217,6 +235,9 @@
 
             </div>
 
+            <p><a class="btn btn-info" href="#" role="button" style="margin-top: 25px">&raquo; Find out more</a></p>
+
+
         </section>
 
     </div>
@@ -230,70 +251,80 @@
 
         </h1>
 
-        <h2>Business or pleasure, you've made the right choice…
-        </h2>
+        <h3>Business or pleasure, you've made the right choice…
+        </h3>
 
     </section>
 
     <section>
 
-        <div class="show-pix"></div>
-        <div class="show-pix" style="background-color: red"></div>
-        <div class="show-pix" style="background-color: yellow"></div>
+        <div class="show-pix  " alt="Responsive image" style="background-image: url('http://www.werarch.com/assets/CoffeeCorner_Image3-960x600-1401297759.jpg')">
 
-    </section>
-
-
-    <div class="quote2">
-
-        <h1>FORGET THE SEASONS
-
-        </h1>
-
-        <h2>Over 300 destinations throughout the world
-
-        </h2>
-
-    </div>
-
-    <section class="pix">
-
-        <div class="row" id="pix-travel">
-
-            <div class="col-md-8">
-
-                <div class="show-pix"></div>
-
+            <div class="circle-content text-center text-capitalize">
+                <h3>NORTHERN COFFEE</h3>
+                <h4>Origin from the Northern off the country</h4>
+                <p ><a href="#" role="button" class="btn btn-warning">&raquo; Find out more</a></p>
             </div>
 
-            <div class="col-md-4">
+        </div>
+        <div class="show-pix" alt="Responsive image"style="background-image: url('https://www.barcelo.com/BarceloHotels/en_GB/Images/swimming-pool-hotel-barcelo-dominican-beach21-10277.jpg')">
 
-                <div class="show-pix" style="background-color: red"></div>
-                <div class="show-pix" style="background-color: yellow"></div>
+            <div class="circle-content text-center text-capitalize">
+                <h3>SWIMMING POOL</h3>
+                <h4>Enjoy your time near the beach</h4>
+                <p ><a href="#" role="button" class="btn btn-warning">&raquo; Find out more</a></p>
+            </div>
 
+        </div>
+        <div class="show-pix" alt="Responsive image" style="background-image: url('http://worldalldetails.com/article_image/romantic_luxury_hotel_651598.jpg')">
+
+            <div class="circle-content text-center text-capitalize">
+                <h3>HOTEL GARDEN</h3>
+                <h4>Full of flower you possibly can imagine</h4>
+                <p ><a href="#" role="button" class="btn btn-warning">&raquo; Find out more</a></p>
             </div>
 
         </div>
 
-
-
     </section>
 
-    <section class="container follow">
+
+
+
+
+
+    <section class="follow">
 
         <div class="row">
 
 
-            <div class="col-md-6">
+            <div class="col-md-6 text-uppercase">
 
                 <h2>Follow us on</h2>
 
+                <div>
+
+
+                        <img class="icon" src="http://www.budget.com/budgetWeb/images/common/facebook1.png">
+                        <img class="icon" src="http://icons.iconarchive.com/icons/martz90/circle/128/google-plus-icon.png">
+                        <img class="icon" src="https://cdn3.iconfinder.com/data/icons/social-icons-5/607/Twitterbird.png">
+                        <img class="icon" src="http://warrenhaydon.com/wp-content/uploads/instagram.png">
+
+
+
+                </div>
+
 
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 text-uppercase">
 
                 <h2>Download our mobile app</h2>
 
+                <div>
+                    <img class="icon-store" src="http://www.insightusergroup.org/media/whvkzzvb.png">
+                    <img class="icon-store" src="https://sqeeqee.com/static/images/google-play.png">
+
+                </div>
 
             </div>
 
@@ -308,7 +339,7 @@
 
         <div class="row">
 
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
 
                 <h1>OUR HOTEL</h1>
                 <ul style="list-style-type:none">
@@ -319,14 +350,14 @@
 
                 </ul>
 
-            </div> <div class="col-md-6">
+            </div> <div class="col-md-6 text-center">
 
                 <h1>HELP AND CONTACTS</h1>
-                <ul style="">
+                <ul style="list-style-type:none" >
 
-                    <li><a href="#"> Manage your reservation</a></li>
-                    <li><a href="#"> Site map </a></li>
-                    <li><a href="#"> Personal Data </a></li>
+                    <li><p><a href="#"> Manage your reservation</a></p></li>
+                    <li><p><a href="#"> Site map </a></p></li>
+                    <li><p><a href="#"> Personal Data </a></p></li>
 
                 </ul>
 
@@ -336,6 +367,14 @@
         </div>
 
     </section>
+
+<hr>
+
+<footer class="text-center">
+
+    <p>Copyright Hotel</p>
+
+</footer>
 
 </div>
 
@@ -348,6 +387,18 @@
 
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+
+<script>
+
+    $(function () {
+
+        $('.datepicker').datepicker();
+
+    });
+
+
+</script>
 
 
 </body>
